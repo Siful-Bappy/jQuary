@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <title>My jQuary program</title>
+    <style>
+      body{
+        background-color: rgb(76, 55, 55);
+      }
+
+      .cercle{
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p id="paragraph">This is p tag</p>
+    <div id="box-container" class="box-container" style="height: 200px; width: 200px; background-color: brown">
+      <p class="p-tag" id="paragramph" style="color: white; padding: 20px 50px">This is p tag</p>
+      <a href="#home" class="red" id="link">Link</a>
+    </div>
+    <br>
+    <button class="click" style="background-color: rgb(103, 137, 137); padding: 10px 25px;">Click Here</button>
+    <button class="reclick" style="background-color: rgb(103, 137, 137); padding: 10px 25px;">Reclick</button>
+
+    <ul id="list">
+      <li>red</li>
+      <li>black</li>
+      <li>Green</li>
+      <li>white</li>
+    </ul> -->
+
+    <div id="box" class="box red" style="width: 200px; height: 200px; border: 1px solid green; background-color: green; margin: 10px 25px;"></div>
+    <button id="btn" style="margin: 10px 25px; background-color: rgb(177, 158, 158); cursor: pointer;">Change Radus</button>
+    <script>
+
+      $("#btn").click(function() {
+        $("#box").addClass("cercle");
+      })
+      // $("#btn").click(function() {
+      //   $("#box").attr("class", "cercle");
+      // })
+
+      // htlm element select
+      // $("#list").append("<li>Yellow</li>");
+      // $("#list").prepend("<li>Yellow</li>");
+      // $("#list").after("<li>Red</li>");
+      // $("#list").before("<li>Red</li>");
+      // $("#list").empty();
+      // $("#list").remove();
+
+      // $(".click").click(function(){
+      //   // const value = $("#link").attr("class", "black");
+
+      //   $("#link").attr({
+      //     "class": "black",
+      //     "href": "https://google.com",
+      //   })
+      //   alert(value);
+      // })
+
+      // $(".click").click(function(){
+      //   $(".box-container").css("background-color", "green").slideUp(2000).slideDown(1000, function(){
+      //   const text = $(".p-tag").text();
+      //   alert("The click value is: " + text);
+      // });
+      // })
+      // $(".click").click(function(){
+      //   const text = $(".p-tag").text();
+      //   alert("The click value is: " + text);
+      // })
+
+      // $(".click").on({
+      //   click: function() {
+      //     $(".box-container").hide();
+      //   },
+      //   mouseenter: function() {
+      //     $(this).css("backgroud-color", "blue");
+      //   },
+      //   hover: function() {
+      //     $(".box-container").show();
+      //   },
+      // })
+
+      // $(".box-container").click(function() {
+      //   $(this).css("background-color", "green");
+      // });
+
+      // $(".box-container").on({
+      //   click: function() {
+      //     $(this).css("background-color", "red");
+      //   },
+      //   dblclick: function() {
+      //     $(this).css("background-color", "white");
+      //   },
+      //   mouseenter: function() {
+      //     $(this).css("background-color", "blue");
+      //   },
+      // });
+
+
+    </script>
+  </body>
+</html>

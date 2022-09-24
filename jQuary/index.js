@@ -15,8 +15,15 @@
 // console.log(person2.hasOwnProperty("name"));
 // console.log(person1.hasOwnProperty("prototype"));
 
+function Creature(ls) {
+    this.lifeSpan = ls;
+}
+Creature.prototype.breath = function () {
+    console.log("breathing...");
+}
+
 function Person(first, last, a) {
-    this.firstName = first;
+    this.firstName = first; 
     this.lastName = last;
     this.a = a;
 
@@ -28,7 +35,11 @@ Person.prototype.fullName = function() {
     console.log(this.firstName + " " + this.lastName);
 }
 
+Person.prototype.__proto__ = Object.create(Creature.prototype);
+
 let person1 = new Person("Siful", "Bappy", 24);
 let person2 = new Person("Hamim", "Buiha", 25);
+let creature = new Creature(100);
 
+console.log(creature);
 console.log(person1);
